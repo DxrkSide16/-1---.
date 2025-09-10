@@ -1,11 +1,11 @@
-number1 = int(input("Number 1: "))
-number2 = int(input("Number 2: "))
-number3 = int(input("Number 3: "))
+n1 = int(input("Number 1: "))
+n2 = int(input("Number 2: "))
+n3 = int(input("Number 3: "))
 
-float_number1 = float(number1)
-float_number2 = float(number2)
-float_number3 = float(number3)
+result1 = 2 ** n1
+result2 = 2 ** n2
+result3 = 2 ** n3
 
-print(f"{float_number1:.3f}")
-print(f"{float_number2:.3f}")
-print(f"{float_number3:.3f}")
+print(result1)
+print(result2)
+print(result3)
