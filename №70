@@ -1,0 +1,11 @@
+n1 = int(input("Number 1: "))
+n2 = int(input("Number 2: "))
+n3 = int(input("Number 3: "))
+
+sum_of_numbers1 = n1 * (n1 + 1) // 2 #формула Гаусса
+sum_of_numbers2 = n2 * (n2 + 1) // 2 
+sum_of_numbers3 = n3 * (n3 + 1) // 2 
+
+print(sum_of_numbers1)
+print(sum_of_numbers2)
+print(sum_of_numbers3)
