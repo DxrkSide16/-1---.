@@ -1,0 +1,23 @@
+x1 = int(input("x1 (hours on the broken clock): "))
+y1 = int(input("y1 (minutes on the broken clock): "))
+a1 = int(input("a1 (true hours): "))
+b1 = int(input("b1 (true minutes): "))
+x2 = int(input("x2 (new hours on the broken clock): "))
+y2 = int(input("y2 (new minutes on the broken clock): "))
+
+broken_start_m = x1 * 60 + y1
+broken_end_m = x2 * 60 + y2
+true_start_m = a1 * 60 + b1
+
+diff_broken_m = broken_end_m - broken_start_m
+if diff_broken_m < 0:
+    diff_broken_m += 24 * 60
+
+diff_true_m = diff_broken_m * 2
+
+true_end_m = true_start_m + diff_true_m
+
+a2 = (true_end_m // 60) % 24
+b2 = true_end_m % 60
+
+print(f"{a2} {b2}") 
