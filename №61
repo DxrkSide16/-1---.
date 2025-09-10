@@ -1,0 +1,13 @@
+t = int(input("How much minutes to sleep: ")) 
+h = int(input("The time when Olena goes to sleep(hours): "))  
+m = int(input("The time when Olena goes to sleep(minutes): ")) 
+
+start_minutes_from_midnight = h * 60 + m
+
+total_minutes = start_minutes_from_midnight + t
+
+alarm_h = total_minutes // 60  
+alarm_m = total_minutes % 60   
+
+print(alarm_h)
+print(alarm_m)
