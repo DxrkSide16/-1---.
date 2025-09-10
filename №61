@@ -6,7 +6,7 @@ start_minutes_from_midnight = h * 60 + m
 
 total_minutes = start_minutes_from_midnight + t
 
-alarm_h = total_minutes // 60  
+alarm_h = total_minutes // 60 % 24
 alarm_m = total_minutes % 60   
 
 print(alarm_h)
