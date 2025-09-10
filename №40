@@ -1,0 +1,5 @@
+number = int(input("Number: "))
+
+float_number = float(number)
+
+print(f"{float_number:.3f}")
